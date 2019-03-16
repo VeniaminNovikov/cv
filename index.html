@@ -185,9 +185,11 @@
   </div>
 </footer>
 <script>
+  var display=setInterval(function(){Time()},0);
   function Time() {
     var date=new Date();
-    document.getElementById("time").innerHTML=date.toLocaleTimeString();
+    var time=date.toLocaleTimeString();
+    document.getElementById("time").innerHTML=time;
   }
 </script>
 </body>
