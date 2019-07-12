@@ -3,6 +3,9 @@
 <head>
     <title>Veniamin Novikov CV</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <style>
         h4 {
@@ -131,6 +134,9 @@
                 </a>
             </h3>
         </div>
+        <button type="button" class="float-right btn btn-outline-primary btn-sm" data-toggle="modal" data-target=".bd-example-modal-lg">
+            Main projects description
+        </button>
         <div class="custom">
             Having broad expertise in industry and big picture thinking;
             paying attention to details with adaptive perfectionism;
@@ -177,10 +183,11 @@
             HTML5/CSS/JS, Bootstrap, Thymeleaf, Junit4, Mockito, Travis, etc.
         </div>
         <div class="custom">
-            <a target="_blank" href="https://github.com/JujaLabs"> Spring Cloud RESTful microservices</a>,
-            where I've implemented Netflix OSS components integration;
-            developed RESTful API, documented with Open API/Swagger; provided
-            <a target="_blank" href="https://github.com/JujaLabs/docs/tree/master/other/style_guide">community Java style guide</a>.
+            <a target="_blank" href="https://github.com/JujaLabs">Spring Cloud RESTful microservices</a>
+            - implemented Netflix OSS integration; developed RESTful API, documented with Open API/Swagger; provided
+            <a target="_blank" href="https://github.com/JujaLabs/docs/tree/master/other/style_guide">
+                community Java style guide
+            </a>.
         </div>
         <div>
             <h4 class="border-secondary border-top border-bottom">
@@ -203,6 +210,58 @@
         (c) 2019
     </div>
 </footer>
+<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Project Experience</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        <strong>Transportation business portal</strong><br>
+                        Microservices based online system to organize business in transportation industry for a
+                        midsize North-American IT company<br>
+                        Team: 10+ persons<br>
+                        Position: Software developer, in progress now<br>
+                        Libraries: Spring Boot, Spring Cloud<br>
+                        Databases: Mongo DB, MySQL<br>
+                        Tools: Jira, Jenkins, SonarQube, Postman, Robo3t, MySQL Workbench<br>
+                        Other: AWS SDK 2, Swift Stack storage provider<br>
+                    </p>
+                    <p>
+                        <strong>Educational management system</strong><br>
+                        Online service to organize school management, study process, and communication between students, 
+                        their parents and teachers for an Ukrainian state educational organization<br>
+                        Team: 5 persons<br>
+                        Position: Full stack software developer, team lead, 1 year<br>
+                        Languages: Java, Javascript<br>
+                        Libraries: Spring Boot, Spring MVC, Spring Data, Spring Security, Spring AOP, Thymeleaf, Bootstrap<br>
+                        Databases: PostgreSQL<br>
+                        Tools: GitHub, Travis, Agile, Kanban, SonarQube, Postman, Intellij IDEA<br>
+                        Other: *nix server operations
+                    </p>
+                    <p>
+                        <strong>Construction industry project management and analytic system</strong><br>
+                        Company size service to organize project management and data processing in construction surveying
+                        for an Ukrainian surveying company<br>
+                        Team: 5+ persons<br>
+                        Position: Data analyst, software developer, 2+ years<br>
+                        Languages: Java, R<br>
+                        Libraries: Spring Boot, Spring MVC, Spring Data<br>
+                        Databases: MySQL<br>
+                        Tools: GitHub, Agile, Intellij IDEA, RStudio, Shiny<br>
+                        Other: *nix server operations
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+    </div>
+</div>
 <script type="text/javascript">
     var display=setInterval(function(){Time()},0);
     function Time() {
